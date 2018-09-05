@@ -9,6 +9,8 @@
 "中间值比left小，说明left到mid这段是先增后减小的,从left到mid找,令mid=right"
 "循环条件为left<right，最后返回nums[left]，nums[right]中较小的"
 
+"递增的序列一般是left=mid+1，right=mid-1,但是此题不是递增序列"
+
 def findMin(nums):
     left=0
     right=len(nums)-1
